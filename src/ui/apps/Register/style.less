@@ -1,0 +1,100 @@
+@import "~ui/less/variables";
+
+.root {
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+
+  @media @on-mobile {
+    background-color: #F9FAFB;
+    flex-shrink: 0;
+  }
+}
+
+.logo {
+  float: left;
+  width: 180px;
+  height: 36px;
+  margin: 10px;
+  background-image: url('ui/img/wext-logo.png');
+  background-size: cover;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 30px 0;
+}
+
+.startTitle {
+  margin-bottom: 30px;
+  width: 400px;
+  font-size: 34px;
+  font-weight: 300;
+  letter-spacing: -1.6px;
+  color: #2b3d54;
+  text-align: center;
+
+  @media @up-mobile {
+    line-height: 45px;
+  }
+}
+
+.submitForm {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+
+  @media @on-mobile {
+    width: 100%;
+  }
+}
+
+.inputTitle {
+  width: 100%;
+  padding-bottom: 5px;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: #838f9f;
+  text-align: center;
+}
+
+.input {
+  width: 400px;
+  height: auto;
+  padding: 0;
+  margin-bottom: 27px;
+  border: none;
+}
+
+.inputPlaceholder {
+  &::placeholder {
+    font-weight: 300;
+    letter-spacing: -0.3px;
+    color: #c5cdd7;
+  }
+}
+
+.forgotPasswordLink {
+  font-size: 14px;
+  text-decoration: none;
+  color: #007eff;
+  transition: color .2s;
+
+  &:hover {
+    color: #095bae;
+  }
+}
+
+.btn {
+  width: 100% !important;
+  min-width: 100% !important;
+  margin-top: 5px;
+  transition: all .2s;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="16px" viewBox="0 0 26 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Ogrenci-Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02-Ogrenci-Rapor-Giris" transform="translate(-1212.000000, -246.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="arrow" transform="translate(1212.000000, 245.000000)">
+                <path d="M16.7491667,1.30868359 L16.7491667,1.30868359 C16.3375886,1.71718912 16.3350977,2.38199828 16.7436033,2.79357639 C16.7454508,2.7954378 16.7473053,2.79729227 16.7491667,2.79913978 L21.9341667,7.94543194 L21.9341667,10.0545681 L16.7491667,15.2008602 C16.3375886,15.6093658 16.3350977,16.2741749 16.7436033,16.685753 C16.7454508,16.6876144 16.7473053,16.6894689 16.7491667,16.6913164 L16.7491667,16.6913164 C17.1647475,17.1037947 17.8352525,17.1037947 18.2508333,16.6913164 L26,9 L18.2508333,1.30868359 C17.8352525,0.896205256 17.1647475,0.896205256 16.7491667,1.30868359 Z" id="proceed-arrow"></path>
+                <path d="M23,10.1091361 L1.05456806,10.1091361 C0.472146205,10.1091361 0,9.63698992 0,9.05456806 C0,8.4721462 0.472146205,8 1.05456806,8 L23,8 L23,10.1091361 Z" id="proceed-line"></path>
+            </g>
+        </g>
+    </g>
+</svg>

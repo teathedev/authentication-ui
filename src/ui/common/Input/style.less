@@ -1,0 +1,169 @@
+@import "~ui/less/variables";
+
+.root {
+  display: flex;
+  // width: 310px;
+  margin-bottom: 25px;
+  position: relative;
+  font-family: 'Overpass', sans-serif;
+  border: 1px solid transparent;
+
+  &.active {
+    .inputEye g {
+          fill: #838f9f;
+    }  
+
+    .input {
+      border: 1px solid #c5cdd7;
+      &:active, &:focus {
+        border: solid 1px #007eff;
+        box-shadow: 0 1px 2px 0 #0000001a;
+      }
+    }
+  }
+  &.success {
+    .input {
+      border: 1px solid #2ecc71;
+    }
+    .message {
+      color: #2ecc71;
+    }
+  }
+
+  &.warning {
+    .input {
+      border: solid 1px #f59d00;
+    }
+    .message {
+      color: #f59d00;
+    }
+  }
+
+  &.error {
+    .input {
+      border: solid 1px #c3325a;    
+    }
+    .message {
+      color: #c3325a;
+    }
+  }
+
+  &.suggestion {
+    .message {
+      color: #838f9f;
+    }
+  }
+
+  &.disabled {
+    .input {
+      border: 1px solid #c5cdd7;
+      color: #c5cdd7;
+    }
+  }
+
+  @media @on-mobile {
+    width: 100%;
+    max-width: 310px;
+    margin-bottom: 45px;
+  }
+}
+
+.inputEye {
+  width: 22px;
+  height: 14px;
+  position: absolute;
+  top: 19px;
+  right: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  g {
+    fill: #e4ecf0;
+  }
+
+  &.active svg g {
+    fill: #007eff !important;
+  }
+}
+
+.input {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  font-size: 16px;
+  letter-spacing: -0.3px;
+  color: #2b3d54;
+  border-radius: 3px;
+  outline: none;
+  background-color: #ffffff;
+  border: 1px solid #c5cdd7;
+
+  &:active, &:focus {
+    border: solid 1px #007eff;
+  }
+
+  &::placeholder {
+    font-weight: normal;
+    color: #515976;
+  }
+}
+
+.message {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+
+  &.right{
+    margin-left: 10px;
+    top: 0;
+    left: 100%;
+
+    @media @on-mobile {
+      margin-left: 0;
+      top: 55px;
+      left: 0;
+    }
+  }
+
+  &.bottom {
+    width: 100%;
+    height: 30px;
+    align-items: flex-start;
+    margin-left: 0;
+    top: 55px;
+    left: 0;
+    line-height: 1;
+    
+    br {
+      display: none;
+    }
+  }
+
+  &.errorCustom {
+    color: #c3325a !important;
+  }
+
+  @media @on-mobile {
+    width: 100%;
+    height: 40px;
+    align-items: flex-start;
+    margin-left: 0;
+    top: 55px;
+    left: 0;
+    line-height: 1;
+    
+    br {
+      display: none;
+    }
+  }
+}

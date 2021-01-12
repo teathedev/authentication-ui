@@ -1,0 +1,92 @@
+@import "~ui/less/variables";
+
+
+// button
+:global
+.btn {
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #007eff;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px 0 rgba(3, 90, 180, 0.5);
+  outline: none;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  font-family: 'Overpass', sans-serif;
+  border: 1px solid transparent;
+  transition: all .4s;
+
+  &:hover {
+    background-color: #0568cc;
+  }
+
+  &.large {
+    height: 50px;
+    line-height: 50px;
+    flex-shrink: 0;
+
+    @media @up-mobile {
+      min-width: 310px;
+    }
+
+    @media @on-mobile {
+      width: 100%;
+    }
+  }
+
+  &.small {
+    min-width: 100px;
+    height: 35px;
+    line-height: 35px;
+  }
+
+  &.medium {
+    min-width: 160px;
+    height: 50px;
+    line-height: 40px;
+  }
+
+  &.callToAction {
+    background-color: #f1840f;
+    box-shadow: 0 1px 3px 0 #00000026;
+
+    &:hover {
+      background-color: #df790d;
+    }
+  }
+
+  &.outline {
+    background-color: transparent;
+    color: #8e9aa9;
+    border-color: #c5cdd7;
+    box-shadow: none;
+    transition: all .4s;
+    
+    &:hover {
+      border-color: #007eff;
+      color: #007eff;
+    }
+  }
+
+  &.disabled {
+    pointer-events: none;
+    color: #ffffff;
+    background-color: #e4ecf0;
+    box-shadow: none;
+    border-color: transparent;
+    cursor: not-allowed;
+  }
+}
+
+:global
+.selectBox {
+  width: 310px;
+  height: 40px;
+  margin-bottom: 20px;
+}
